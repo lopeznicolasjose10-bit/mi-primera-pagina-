@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 700px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      color: #ff4f81;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: beat 1.2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Feliz Cumpleaños 🎂</h1>
+    <p>
+      Hoy es uno de esos días que inevitablemente me hacen pensar en ti, no desde la tristeza ni desde el pasado, sino desde el agradecimiento por todo lo que alguna vez compartimos. Quería desearte un cumpleaños lleno de calma, de sonrisas sinceras y de momentos que te recuerden lo valiosa que eres como persona. Aunque nuestros caminos tomaron rumbos distintos, eso no borra lo bonito que fue coincidir, aprender, crecer y sentir. Ojalá este nuevo año te acerque a todo lo que sueñas, a la paz que mereces y a personas que te quieran bonito, sin medias tintas. Que encuentres razones para reírte sin culpa, para avanzar sin miedo y para creer en ti incluso en los días donde todo parece pesado. De mi parte solo queda desearte lo mejor, con respeto, con cariño sano y con la tranquilidad de saber que cada quien sigue su camino, pero los buenos deseos no se pierden con el tiempo. 
+    </p>
+    <div class="heart">❤️</div>
+  </div>
+</body>
+</html>
